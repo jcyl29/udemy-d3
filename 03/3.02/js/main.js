@@ -7,7 +7,7 @@
 var svg = d3.select("#chart-area")
     .append("svg")
         .attr("width", "400")
-        .attr("height", "400");
+        .attr("height", "200");
 
 d3.json("data/buildings.json").then(function(data){
     console.log(data);
