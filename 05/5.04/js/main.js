@@ -16,6 +16,8 @@ var g = d3.select("#chart-area")
     .append("g")
         .attr("transform", "translate(" + margin.left + ", " + margin.top + ")");
 
+console.log("g", g)
+
 var xAxisGroup = g.append("g")
     .attr("class", "x axis")
     .attr("transform", "translate(0," + height +")");

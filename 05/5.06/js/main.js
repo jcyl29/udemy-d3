@@ -49,7 +49,6 @@ var yLabel = g.append("text")
     .attr("font-size", "20px")
     .attr("text-anchor", "middle")
     .attr("transform", "rotate(-90)")
-    .text("Revenue");
 
 d3.json("data/revenues.json").then(function(data){
     // console.log(data);
@@ -77,7 +76,7 @@ function update(data) {
 
     // X Axis
     var xAxisCall = d3.axisBottom(x);
-    xAxisGroup.call(xAxisCall);;
+    xAxisGroup.call(xAxisCall);
 
     // Y Axis
     var yAxisCall = d3.axisLeft(y)
